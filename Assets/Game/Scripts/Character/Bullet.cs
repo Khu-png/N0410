@@ -65,7 +65,6 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Bullet trigger with: " + other.name + " | Tag: " + other.tag);
 
         if (owner == BulletOwner.Player && other.CompareTag("Enemy"))
         {
